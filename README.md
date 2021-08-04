@@ -13,16 +13,16 @@ MVP firmware for plant monitoring device. The device maked of CPU board - NodeMC
 For building and running the firmware, need to install MCU board specification. For this go to File→Preferences type to input box  Additional Boards Manager URLs this link http://arduino.esp8266.com/stable/package_esp8266com_index.json
 After this, go to the Tools→Board →Boards Manager and find esp8266 package. Install this.
 ##### 1.1 Arduino libraries to be installed (some libraries may be not need, it just my configuration):
-• OneWire
-• DallasTemperature
-• Adafruit Unified Sensor
-• Adafruit TSL2591 Library
-• Adafruit SleepyDog Library
-• Adafruit MQTT Library
-• Adafruit FONA Library
-• Adafruit Circuit Playgroud
-• PubSubClient
-• PubSubClientTools
+- OneWire
+- DallasTemperature
+- Adafruit Unified Sensor
+- Adafruit TSL2591 Library
+- Adafruit SleepyDog Library
+- Adafruit MQTT Library
+- Adafruit FONA Library
+- Adafruit Circuit Playgroud
+- PubSubClient
+- PubSubClientTools
 
 ### Some comments for the firmware sources
 Each object of the firmware defined in own source file. 

@@ -55,10 +55,10 @@ void BrightnessSensor::configure()
   // tsl.setTiming(TSL2591_INTEGRATIONTIME_600MS);  // longest integration time (dim light)
 
   /* Display the gain and integration time for reference sake */  
-  Serial.println(F("------------------------------------"));
-  Serial.print  (F("Gain:         "));
+  /*Serial.println(F("------------------------------------"));
+  Serial.print  (F("Gain:         "));*/
   tsl2591Gain_t gain = tsl.getGain();
-  switch(gain)
+  /*switch(gain)
   {
     case TSL2591_GAIN_LOW:
       Serial.println(F("1x (Low)"));
@@ -77,5 +77,5 @@ void BrightnessSensor::configure()
   Serial.print((tsl.getTiming() + 1) * 100, DEC); 
   Serial.println(F(" ms"));
   Serial.println(F("------------------------------------"));
-  Serial.println(F(""));
+  Serial.println(F(""));*/
 }

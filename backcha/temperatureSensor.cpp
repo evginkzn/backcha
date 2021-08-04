@@ -20,7 +20,7 @@ void TemperatureSensor::init()
   //..
   //
 
-  Serial.println("Temperature sensor initialization done");
+  //Serial.println("Temperature sensor initialization done");
 }
 
 void TemperatureSensor::run()

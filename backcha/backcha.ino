@@ -32,33 +32,33 @@ void loop()
   {
     temp_show_period_cnt = millis();
 
-    Serial.print("Temperature: ");
-    Serial.print(t.get_str());
+    //Serial.print("Temperature: ");
+    //Serial.print(t.get_str());
     mqttService.push(MqttService::TopicTemperature, t.get_str());
-    Serial.print(" oC");
-    Serial.println("");
+    //Serial.print(" oC");
+    //Serial.println("");
   }
 
   if ((millis() - bright_show_period_cnt) >= 2000)
   {
     bright_show_period_cnt = millis();
 
-    Serial.print("Brightness: ");
-    Serial.print(b.get_str());
+    //Serial.print("Brightness: ");
+    //Serial.print(b.get_str());
     mqttService.push(MqttService::TopicBrightness, b.get_str());
-    Serial.print(" Lux");
-    Serial.println("");
+    //Serial.print(" Lux");
+    //Serial.println("");
   }
 
   if ((millis() - soil_show_period_cnt) >= 2000)
   {
     soil_show_period_cnt = millis();
 
-    Serial.print("Soil Moisture Level: ");
-    Serial.print(s.get_str());
+    //Serial.print("Soil Moisture Level: ");
+    //Serial.print(s.get_str());
     mqttService.push(MqttService::TopicSoilMoisture, s.get_str());
-    Serial.print(" \%");
-    Serial.println("");
+    //Serial.print(" \%");
+    //Serial.println("");
   }
 }
 

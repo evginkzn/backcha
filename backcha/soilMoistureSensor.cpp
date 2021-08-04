@@ -23,12 +23,12 @@ void SoilMoistureSensor::run()
       max_val_ = lastValue_;
     }
 
-    Serial.print(min_val_);
+    /*Serial.print(min_val_);
     Serial.println("");
     Serial.print(max_val_);
     Serial.println("");
     Serial.print(lastValue_);
-    Serial.println("");
+    Serial.println("");*/
 
     float level = ((float)lastValue_ - (float)min_val_)/((float)max_val_ - (float)min_val_);
     perc = 100 - (level*100);
